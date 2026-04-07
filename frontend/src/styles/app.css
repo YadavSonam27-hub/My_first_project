@@ -1,0 +1,96 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #111;
+}
+
+body.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #1e3a8a;
+  color: #fff;
+}
+
+.nav a,
+.brand,
+.nav button {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-card,
+.dashboard {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .auth-card,
+body.dark .dashboard,
+body.dark .card {
+  background: #1e293b;
+}
+
+form,
+.search-row {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+input,
+button {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.center {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  form,
+  .search-row {
+    flex-direction: column;
+  }
+}
